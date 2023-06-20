@@ -11,11 +11,11 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
-      if(authUser) {
+      if (authUser) {
         dispatch(
           loginUser({
             uid: authUser.uid,
-            username: authUser.displayName
+            username: authUser.displayName,
             email: authUser.email,
           })
         );
@@ -26,7 +26,7 @@ function App() {
       }
     });
   }, []);
-  
+
   const user = useSelector((state) => state.data.user.user);
   const isLoading = useSelector((state) => state.data.user.isLoading);
   return (
