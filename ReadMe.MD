@@ -2,5 +2,5 @@
 
 ### Technologies Used :
  -React  
- -Django
+ -Firebase
  
