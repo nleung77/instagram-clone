@@ -14,4 +14,6 @@ import { signOut } from "firebase/auth";
 import { logoutUser } from "../features/userSlice";
 import { auth } from "../firebase";
 
-function Sidenav() {}
+function Sidenav() {
+    const
+}
