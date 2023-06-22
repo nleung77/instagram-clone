@@ -15,5 +15,13 @@ import { logoutUser } from "../features/userSlice";
 import { auth } from "../firebase";
 
 function Sidenav() {
-    const
+    const user = useSelector((state) => state.data.user.user);
+    const dispatch = useDispatch();
+    const handleLogout = () => {
+        dispatch(logoutUser());
+        signOut(auth);
+    };
+    return(
+
+  );
 }
