@@ -79,3 +79,5 @@ function Sidenav() {
     </div>
   );
 }
+
+export default Sidenav;
